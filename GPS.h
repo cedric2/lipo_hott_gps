@@ -5,13 +5,16 @@
 #include <SoftwareSerial.h>
 #include <inttypes.h>
 
+// For connect the GPS on Serial2 (for mega)
 #define SERIAL_L_GPS Serial2
 
-//#define USE_SoftwareSerial
+// For use with uno or other, with only one serial
+#define USE_SoftwareSerial
 #ifdef USE_SoftwareSerial
 #define SERIAL_L_GPS (*myserial)
 #endif
 
+// Pin for the GPS in/out, if USE_SoftwareSerial
 #define SoftwareSerial_in 10
 #define SoftwareSerial_out 11
 
