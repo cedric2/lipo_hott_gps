@@ -24,7 +24,7 @@ GPS::GPS() //: myserial(10, 11)
   }
 }
 
-/*
+
 bool GPS::newFrame() {
 
   char c = SERIAL_L_GPS.read();
@@ -324,4 +324,4 @@ uint32_t GPS::distance()
 
 
 
-*/
+
